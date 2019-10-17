@@ -57,8 +57,6 @@ public class TestaColaboradores {
         gleyson.setSenha(54321);
         santos.setSenha(54321);
 
-//        System.out.println(vinicius.getNome()+" "+vinicius.tipoDeFuncionario());     - programador não é autenticavel
-//        sistemaDeGestao.autenticar(vinicius);                                        - programador não é autenticavel
         System.out.println(gleyson.getNome()+" "+gleyson.tipoDeFuncionario());
         sistemaDeGestao.autenticar(gleyson);
         System.out.println(santos.getNome()+" "+santos.tipoDeFuncionario());
