@@ -7,7 +7,7 @@ public class SistemaInterno {
         this.senha = senha;
     }
 
-    public void autenticar(FuncionarioAutenticavel funcinario){
+    public void autenticar(Autenticavel funcinario){
         boolean senhaConfere = funcinario.autenticaSenha(this.senha);
         if(senhaConfere == true){
             System.out.println(" -> Acesso aberto ao usuário!");
