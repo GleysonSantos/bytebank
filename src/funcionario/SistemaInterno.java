@@ -1,6 +1,7 @@
 package funcionario;
 
 public class SistemaInterno {
+
     private int senha;
 
     public void setSenha(int senha) {

@@ -4,47 +4,47 @@ public class TestaColaboradores {
     public static void main(String[] args) {
 
         // criando novo prgramador
-        Programador vinicius = new Programador();
-        System.out.println("-----------"+vinicius.tipoDeFuncionario()+"-----------");
-        vinicius.setNome("Vinícius");
-        vinicius.setCPF("555.444.333-22");
-        vinicius.setSalario(2500.00);
+        Programador programador = new Programador();
+        System.out.println("-----------"+programador.tipoDeFuncionario()+"-----------");
+        programador.setNome("Vinícius");
+        programador.setCPF("555.444.333-22");
+        programador.setSalario(2500.00);
 
-        System.out.println("Nome programador: "+vinicius.getNome());
-        System.out.println("CPF programador: "+vinicius.getCPF());
-        System.out.println("Salario programador: R$ "+vinicius.getSalario());
-        System.out.println("Bonifcação programador: R$ "+vinicius.getBonificacao());
+        System.out.println("Nome programador: "+programador.getNome());
+        System.out.println("CPF programador: "+programador.getCPF());
+        System.out.println("Salario programador: R$ "+programador.getSalario());
+        System.out.println("Bonifcação programador: R$ "+programador.getBonificacao());
 
         // criando novo gerente
-        Gerente gleyson = new Gerente();
-        System.out.println("-----------"+gleyson.tipoDeFuncionario()+"-----------");
-        gleyson.setNome("Gleyson");
-        gleyson.setCPF("222.222.222-22");
-        gleyson.setSalario(5000.00);
+        Gerente gerente = new Gerente();
+        System.out.println("-----------"+gerente.tipoDeFuncionario()+"-----------");
+        gerente.setNome("Gleyson");
+        gerente.setCPF("222.222.222-22");
+        gerente.setSalario(5000.00);
 
-        System.out.println("Nome gerente: "+gleyson.getNome());
-        System.out.println("CPF gerente: "+gleyson.getCPF());
-        System.out.println("Salario gerente: R$ "+gleyson.getSalario());
-        System.out.println("Bonifcação gerente: R$ "+gleyson.getBonificacao());
+        System.out.println("Nome gerente: "+gerente.getNome());
+        System.out.println("CPF gerente: "+gerente.getCPF());
+        System.out.println("Salario gerente: R$ "+gerente.getSalario());
+        System.out.println("Bonifcação gerente: R$ "+gerente.getBonificacao());
 
         // criando novo diretor
-        Diretor santos = new Diretor();
-        System.out.println("-----------"+santos.tipoDeFuncionario()+"-----------");
-        santos.setNome("Santos");
-        santos.setCPF("123.123.123-12");
-        santos.setSalario(9500.00);
+        Diretor diretor = new Diretor();
+        System.out.println("-----------"+diretor.tipoDeFuncionario()+"-----------");
+        diretor.setNome("Santos");
+        diretor.setCPF("123.123.123-12");
+        diretor.setSalario(9500.00);
 
-        System.out.println("Nome diretor: "+santos.getNome());
-        System.out.println("CPF diretor: "+santos.getCPF());
-        System.out.println("Salario direto: R$ "+santos.getSalario());
-        System.out.println("Bonificação diretor: R$ "+santos.getBonificacao());
+        System.out.println("Nome diretor: "+diretor.getNome());
+        System.out.println("CPF diretor: "+diretor.getCPF());
+        System.out.println("Salario direto: R$ "+diretor.getSalario());
+        System.out.println("Bonificação diretor: R$ "+diretor.getBonificacao());
 
         //retorno do total de bonificações
         System.out.println("----------------------------------");
 
         ControleBonificacao controle = new ControleBonificacao();
-        controle.registarBonificacao(gleyson);
-        controle.registarBonificacao(santos);
+        controle.registarBonificacao(gerente);
+        controle.registarBonificacao(diretor);
 
         System.out.println("Total das bonificações: R$ "+controle.getSomaDasBonificacoes());
 
@@ -54,13 +54,19 @@ public class TestaColaboradores {
         SistemaInterno sistemaDeGestao = new SistemaInterno();
         sistemaDeGestao.setSenha(54321);
 
-        gleyson.setSenha(54321);
-        santos.setSenha(54321);
+        gerente.setSenha(54321);
+        diretor.setSenha(54321);
 
-        System.out.println(gleyson.getNome()+" "+gleyson.tipoDeFuncionario());
-        sistemaDeGestao.autenticar(gleyson);
-        System.out.println(santos.getNome()+" "+santos.tipoDeFuncionario());
-        sistemaDeGestao.autenticar(santos);
+        System.out.println(gerente.getNome()+" "+gerente.tipoDeFuncionario());
+        sistemaDeGestao.autenticar(gerente);
+        System.out.println(diretor.getNome()+" "+diretor.tipoDeFuncionario());
+        sistemaDeGestao.autenticar(diretor);
+
+        //testa cliente
+        Cliente cliente = new Cliente();
+        cliente.setSenha(54321);
+
+        sistemaDeGestao.autenticar(cliente);
 
     }
 }

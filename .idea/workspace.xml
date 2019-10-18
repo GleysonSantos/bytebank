@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253aa3e7-2aaa-48d0-b488-a988f3b88133" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/funcionario/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banco/CalculadorDeImposto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banco/SeguroDeVida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banco/Tributavel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/funcionario/AutenticadorUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bytebank/banco/ContaCorrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bytebank/banco/ContaCorrente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bytebank/banco/TesteContas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bytebank/banco/TesteContas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bytebank/funcionario/Diretor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bytebank/funcionario/Diretor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bytebank/funcionario/Gerente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bytebank/funcionario/Gerente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bytebank/funcionario/SistemaInterno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bytebank/funcionario/SistemaInterno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bytebank/funcionario/TestaColaboradores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bytebank/funcionario/TestaColaboradores.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banco/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banco/TesteContas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/TesteContas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funcionario/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionario/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/funcionario/Diretor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionario/Diretor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/funcionario/FuncionarioAutenticavel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionario/Autenticavel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/funcionario/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionario/Gerente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/funcionario/SistemaInterno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionario/SistemaInterno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funcionario/TestaColaboradores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionario/TestaColaboradores.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestaColaboradores">
+  <component name="RunManager" selected="Application.TesteContas">
     <configuration name="TestaColaboradores" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="funcionario.TestaColaboradores" />
       <module name="Bytebank" />
@@ -80,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestaColaboradores" />
         <item itemvalue="Application.TesteContas" />
+        <item itemvalue="Application.TestaColaboradores" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +115,8 @@
       <workItem from="1571246313606" duration="678000" />
       <workItem from="1571247045905" duration="53000" />
       <workItem from="1571262048111" duration="12677000" />
-      <workItem from="1571278531139" duration="4267000" />
+      <workItem from="1571278531139" duration="7765000" />
+      <workItem from="1571353228158" duration="3924000" />
     </task>
     <task id="LOCAL-00001" summary="Alterações nas classes TestaContas e TestaColaboradores">
       <created>1571280040901</created>
@@ -111,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571280040901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Criação da interface Autenticavel (antiga classe FuncionarioAutenticavel)">
+      <created>1571329469513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571329469513</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +143,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -130,6 +153,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Alterações nas classes TestaContas e TestaColaboradores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterações nas classes TestaContas e TestaColaboradores" />
+    <MESSAGE value="Criação da interface Autenticavel (antiga classe FuncionarioAutenticavel)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação da interface Autenticavel (antiga classe FuncionarioAutenticavel)" />
   </component>
 </project>
